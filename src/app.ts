@@ -1,5 +1,6 @@
 import express, { type Application, type Request, type Response } from "express"
 import { userRoute } from "./modules/user/user.route"
+import { issueRoute } from "./modules/issue/issue.router"
 
 
 const app : Application = express()
@@ -9,7 +10,7 @@ app.use(express.json())
 
 
 app.use('/users', userRoute)
-
+app.use('/issue', issueRoute)
 
 app.get('/', (req : Request , res: Response ) => {
 //   res.send('Hello World!!')
