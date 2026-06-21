@@ -39,13 +39,7 @@ const getSingleIssueFromDB = async(id : string) => {
 
 const updateIssueFromDB = async(id : string, payLoad : IIssue) => {
 
-    const { title, description, type, status, reporter_id} = payLoad
-    // const user = await pool.query(`
-    //     SELECT * FROM users WHERE id = $1
-    //     `,[reporter_id])
-    // if(user.rows.length === 0){
-    //     throw new Error('Reporter not found!')
-    // }
+    const { title, description, type, status} = payLoad
 
     const result = await pool.query(`
         UPDATE issues 
