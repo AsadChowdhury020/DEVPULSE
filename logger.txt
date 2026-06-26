@@ -34,3 +34,49 @@ Method: PUT - URL : /users/10 - Time : 1782468347426
 Method: GET - URL : /users - Time : 1782468451562
 
 Method: GET - URL : /users - Time : 1782468557199
+
+Method: GET - URL : /users - Time : 1782473834855
+
+Method: GET - URL : /users - Time : 1782473861070
+
+Method: POST - URL : /api/login - Time : 1782475675624
+
+Method: GET - URL : /users - Time : 1782475717243
+
+Method: GET - URL : /users - Time : 1782475814516
+
+Method: GET - URL : /users - Time : 1782475871898
+
+Method: GET - URL : /users - Time : 1782475888284
+
+Method: POST - URL : /users - Time : 1782485533244
+
+Method: POST - URL : /users - Time : 1782485667819
+
+Method: POST - URL : /users - Time : 1782485693019
+
+Method: GET - URL : /users - Time : 1782485822332
+
+Method: POST - URL : /api/login - Time : 1782485841598
+
+Method: GET - URL : /users - Time : 1782485858612
+
+Method: POST - URL : /api/login - Time : 1782486028812
+
+Method: GET - URL : /users - Time : 1782486051590
+
+Method: GET - URL : /users - Time : 1782486073283
+
+Method: POST - URL : /api/login - Time : 1782486173821
+
+Method: GET - URL : /users - Time : 1782486180037
+
+Method: GET - URL : /users - Time : 1782486196778
+
+Method: POST - URL : /api/login - Time : 1782486207244
+
+Method: GET - URL : /users - Time : 1782486225021
+
+Method: POST - URL : /api/login - Time : 1782486298970
+
+Method: GET - URL : /users - Time : 1782486312325

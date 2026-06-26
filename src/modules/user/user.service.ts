@@ -4,12 +4,12 @@ import bcrypt from "bcryptjs";
 
 const createUserIntoDB =    async(payLoad : IUser) => {
 
-    const { name, email, password } = payLoad
+    const { name, email, password, role } = payLoad
     const hashPassword = await bcrypt.hash(password, 10)
     const result = await pool.query(`
-            INSERT INTO users (name, email, password) VALUES($1, $2, $3) 
+            INSERT INTO users (name, email, password, role) VALUES($1, $2, $3, COALESCE($4, 'contributor')) 
             RETURNING *
-            `, [name, email, hashPassword])
+            `, [name, email, hashPassword, role])
 
     delete result.rows[0].password
     return result
