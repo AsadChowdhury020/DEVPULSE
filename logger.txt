@@ -1,0 +1,36 @@
+
+Method: GET - URL : / - Time : 1782448757070
+
+Method: GET - URL : /favicon.ico - Time : 1782448757238
+
+Method: GET - URL : /users - Time : 1782448781095
+
+Method: GET - URL : /users/5 - Time : 1782448800760
+
+Method: POST - URL : /api/login - Time : 1782458637162
+
+Method: GET - URL : /users - Time : 1782458829595
+
+Method: GET - URL : /users - Time : 1782458940816
+
+Method: GET - URL : /users - Time : 1782460262295
+
+Method: GET - URL : /users - Time : 1782460274978
+
+Method: GET - URL : /users - Time : 1782464913828
+
+Method: POST - URL : /api/login - Time : 1782465817940
+
+Method: GET - URL : /users - Time : 1782465835097
+
+Method: GET - URL : /users - Time : 1782466074776
+
+Method: GET - URL : /users - Time : 1782466093813
+
+Method: PUT - URL : /users/10 - Time : 1782468313406
+
+Method: PUT - URL : /users/10 - Time : 1782468347426
+
+Method: GET - URL : /users - Time : 1782468451562
+
+Method: GET - URL : /users - Time : 1782468557199
