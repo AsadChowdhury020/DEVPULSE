@@ -3,6 +3,7 @@ import jwt, { type JwtPayload } from "jsonwebtoken"
 import config from "../config/dotenv"
 import { pool } from "../database"
 import type { ROLES } from "../types/index.role"
+import { sendResponse } from "../utility/sendResponse"
 
 export const auth = (... roles : ROLES[]) => {
     return async(req : Request, res : Response, next : NextFunction) => {
@@ -12,8 +13,13 @@ export const auth = (... roles : ROLES[]) => {
         const token = req.headers.authorization
         
         if(!token){
-            return res.status(401).json({
-                success : false,
+            // return res.status(401).json({
+            //     success : false,
+            //     message : "Unauthorized access!!"
+            // })
+            return sendResponse(res, {
+                statusCode : 401,
+                success: false,
                 message : "Unauthorized access!!"
             })
         }
@@ -31,23 +37,28 @@ export const auth = (... roles : ROLES[]) => {
         // console.log(user.role)
 
         if(userData.rows.length === 0){
-            return res.status(404).json({
-                success : false,
+            // return res.status(404).json({
+            //     success : false,
+            //     message : "User not found!!"
+            // })
+            return sendResponse(res, {
+                statusCode : 404,
+                success: false,
                 message : "User not found!!"
             })
         }
 
-        // if(!(user.role === "maintainer")){
-        //     return res.status(403).json({
-        //         success : false,
-        //         message : "Forbidden!!"
-        //     })
-        // }
 
         if(roles.length && !roles.includes(user.role)){
-            return res.status(403).json({
-                success : false,
-                message : `Forbidden!! This role has no access`
+            // return res.status(403).json({
+            //     success : false,
+            //     message : "Forbidden!! This role has no access"
+            // })
+
+            return  sendResponse(res, {
+                statusCode : 403,
+                success: false,
+                message : "Forbidden!! This role has no access"
             })
         }
 

@@ -110,3 +110,21 @@ Method: POST - URL : /api/login/refresh_token - Time : 1782551757719
 Method: POST - URL : /api/login/refresh_token - Time : 1782552172652
 
 Method: POST - URL : /api/login/refresh_token - Time : 1782555204989
+
+Method: GET - URL : /users - Time : 1782569553202
+
+Method: GET - URL : /users - Time : 1782569564759
+
+Method: GET - URL : /users - Time : 1782569570977
+
+Method: GET - URL : /users - Time : 1782569753383
+
+Method: POST - URL : /users - Time : 1782575158211
+
+Method: POST - URL : /users - Time : 1782575227428
+
+Method: GET - URL : /users - Time : 1782575253940
+
+Method: GET - URL : /users - Time : 1782575293040
+
+Method: GET - URL : /users/5 - Time : 1782575313229
