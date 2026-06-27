@@ -3,13 +3,14 @@ import { userRoute } from "./modules/user/user.route"
 import { issueRoute } from "./modules/issue/issue.router"
 import { authRoute } from "./modules/auth/auth.route"
 import { logger } from "./middleware/logger"
-
+import  cookieParser from 'cookie-parser'
 
 const app : Application = express()
 
 
 app.use(express.json())
 app.use(logger)
+app.use(cookieParser())
 
 app.use('/users', userRoute)
 app.use('/issue', issueRoute)
