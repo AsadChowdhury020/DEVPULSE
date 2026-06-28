@@ -27,7 +27,6 @@ const loginUserFromDB = async(payLoad : IAuth) => {
     const jwtPayLoad = {
         id : user.id,
         name : user.name,
-        email : user.email,
         role : user.role
     } 
 
@@ -61,7 +60,6 @@ const generateRefreshTokenFromDB = async(token : string) => {
         const jwtPayLoad = {
         id : user.id,
         name : user.name,
-        email : user.email,
         role : user.role
     } 
 
