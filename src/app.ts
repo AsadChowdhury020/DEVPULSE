@@ -20,7 +20,7 @@ app.use(cookieParser())
 app.use(cors(corsOptions))
 
 app.use('/users', userRoute)
-app.use('/issue', issueRoute)
+app.use('/api/issues', issueRoute)
 app.use('/api/login', authRoute)
 
 app.get('/', (req : Request , res: Response ) => {
