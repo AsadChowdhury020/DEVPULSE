@@ -9,11 +9,10 @@ dotenv.config({
 const config = {
     connection_string : process.env.CONNECTION_STRING as string,
     port : process.env.PORT, 
-    secret : process.env.JWT_SECRET,
-    access_secret : process.env.ACCESS_JWT_SECRET,
-    access_token_expired_time : process.env.ACCESS_TOKEN_EXPIRED_TIME,
-    refresh_token_expired_time : process.env.REFRESH_TOKEN_EXPIRED_TIME
-
+    access_secret : process.env.JWT_ACCESS_SECRET,
+    refresh_secret : process.env.JWT_REFRESH_SECRET,
+    access_token_expires_in : process.env.ACCESS_TOKEN_EXPIRES_IN as string,
+    refresh_token_expires_in : process.env.REFRESH_TOKEN_EXPIRES_IN
 }
 
 export default config

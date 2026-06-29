@@ -27,11 +27,12 @@ const loginUserFromDB = async(payLoad : IAuth) => {
     const jwtPayLoad = {
         id : user.id,
         name : user.name,
+        email : user.email,
         role : user.role
     } 
 
-    const accessToken = jwt.sign(jwtPayLoad, config.secret as string, {expiresIn : "1d"})
-    const refreshToken = jwt.sign(jwtPayLoad, config.access_secret as string, {expiresIn : "10d"})
+    const accessToken = jwt.sign(jwtPayLoad, config.access_secret as string, {expiresIn : "1d"})
+    const refreshToken = jwt.sign(jwtPayLoad, config.refresh_secret as string, {expiresIn : "10d"})
 
     return { accessToken, refreshToken }
 }
@@ -41,7 +42,7 @@ const generateRefreshTokenFromDB = async(token : string) => {
             throw new Error( "Unauthorized access!!")
         }
 
-        const decode = jwt.verify(token as string, config.access_secret as string) as JwtPayload
+        const decode = jwt.verify(token as string, config.refresh_secret as string) as JwtPayload
         // console.log(decode)
         
         const userData = await pool.query(`
@@ -60,11 +61,12 @@ const generateRefreshTokenFromDB = async(token : string) => {
         const jwtPayLoad = {
         id : user.id,
         name : user.name,
+        email : user.email,
         role : user.role
     } 
 
 
-        const accessToken = jwt.sign(jwtPayLoad, config.secret as string, {expiresIn : "1d"})
+        const accessToken = jwt.sign(jwtPayLoad, config.access_secret as string, {expiresIn : "1d"})
 
     return { accessToken }
 

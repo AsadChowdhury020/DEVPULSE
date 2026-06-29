@@ -6,7 +6,7 @@ DevPulse is a backend REST API built for managing internal software issues and f
 
 ## 🌐 Live API
 
-> https://your-backend-url.vercel.app
+> https://dev-pulse-eight-ruddy.vercel.app/
 
 ---
 
@@ -124,7 +124,6 @@ JWT_REFRESH_SECRET=your_refresh_secret
 
 JWT_REFRESH_EXPIRES_IN=30d
 
-BCRYPT_SALT_ROUNDS=10
 ```
 
 ---

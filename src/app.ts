@@ -19,7 +19,7 @@ app.use(logger)
 app.use(cookieParser())
 app.use(cors(corsOptions))
 
-app.use('/users', userRoute)
+app.use('/api/users', userRoute)
 app.use('/api/issues', issueRoute)
 app.use('/api/login', authRoute)
 

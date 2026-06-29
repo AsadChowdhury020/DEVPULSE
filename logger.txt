@@ -188,3 +188,47 @@ Method: PUT - URL : /api/issues/3 - Time : 1782653031327
 Method: PUT - URL : /api/issues/3 - Time : 1782653052660
 
 Method: GET - URL : /api/issues - Time : 1782664445182
+
+Method: GET - URL : /users - Time : 1782724734837
+
+Method: GET - URL : /api/users - Time : 1782724744866
+
+Method: POST - URL : /api/login/access_token - Time : 1782724789587
+
+Method: GET - URL : /api/users - Time : 1782724802533
+
+Method: GET - URL : /api/users - Time : 1782724805869
+
+Method: GET - URL : /api/users - Time : 1782724926388
+
+Method: GET - URL : /api/users - Time : 1782724983898
+
+Method: GET - URL : /api/users - Time : 1782725012341
+
+Method: GET - URL : /api/users - Time : 1782725045391
+
+Method: GET - URL : /api/users - Time : 1782725093432
+
+Method: GET - URL : /api/issues - Time : 1782725281586
+
+Method: POST - URL : /api/login/access_token - Time : 1782725303606
+
+Method: POST - URL : /api/login/access_token - Time : 1782725307750
+
+Method: GET - URL : /api/issues - Time : 1782725339501
+
+Method: POST - URL : /api/login/access_token - Time : 1782725365587
+
+Method: GET - URL : /api/issues - Time : 1782725400220
+
+Method: POST - URL : /api/login/access_token - Time : 1782725821237
+
+Method: POST - URL : /api/login/access_token - Time : 1782725878067
+
+Method: GET - URL : /api/users - Time : 1782725897384
+
+Method: GET - URL : /api/issues - Time : 1782725908985
+
+Method: GET - URL : /api/users - Time : 1782726789298
+
+Method: GET - URL : /api/users - Time : 1782726793946
